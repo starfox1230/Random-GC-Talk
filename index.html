@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random General Conference Talk</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    #talk-image {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <img id="talk-image" src=C:\Users\sterl\Google_Drive\Coding\Random_GC_Talk\April2023.jpeg alt="Random Talk Image" />
+
+  <script>
+    // Array of URLs for General Conference Talks
+    var talkURLs = [
+      "https://youtu.be/KvEytAwvz1I",
+      "https://youtu.be/s3X2OzwIM_w",
+      "https://youtu.be/l9freQw16qY",
+      "https://youtu.be/eLplozLahP4",
+      "https://youtu.be/I2lW7MswivM",
+      "https://youtu.be/O0jTa8FG7A8",
+      "https://youtu.be/0H590MhqBds",
+      "https://youtu.be/Rb0NCapj8Ok",
+      "https://youtu.be/fnbGPy4ToKE",
+      "https://youtu.be/OTJF3Hcg7oM",
+      "https://youtu.be/4v21kzPOfqE",
+      "https://youtu.be/Yrnl6t7VKjY",
+      "https://youtu.be/JQO_CABjhas",
+      "https://youtu.be/6AEiiYjA_YA",
+      "https://youtu.be/_831HTDL4t0",
+      "https://youtu.be/vCRj1UXb--s",
+      "https://youtu.be/oiD2YNPEMRU",
+      "https://youtu.be/QJCmHyAh5Vk",
+      "https://youtu.be/WQwObipvTJc",
+      "https://youtu.be/0yZ103m1KgE",
+      "https://youtu.be/nmd9-jIdoHQ",
+      "https://youtu.be/adEyzv6KM98",
+      "https://youtu.be/TSmP5tnSevI",
+      "https://youtu.be/TSmP5tnSevI",
+      "https://youtu.be/KW8MJvc6BaY",
+      "https://youtu.be/vQghSMOOYz4",
+      "https://youtu.be/5x8aO3-UpYY",
+      "https://youtu.be/xbztWViiRqg",
+      "https://youtu.be/eT88mhxJS78",
+      "https://youtu.be/gWYXk_7uLbU",
+      "https://youtu.be/lqdSxuhREwU",
+      "https://youtu.be/tYdM8WyYM-c",
+      "https://youtu.be/u2MRApP9pSE",
+      "https://youtu.be/DaLEnQEgTuM"
+    ];
+
+    // Get the talk image element
+    var talkImage = document.getElementById("talk-image");
+
+    // Add a click event listener to the talk image
+    talkImage.addEventListener("click", function() {
+      // Generate a random index within the range of talkURLs array length
+      var randomIndex = Math.floor(Math.random() * talkURLs.length);
+
+      // Open the random talk URL in a new tab
+      window.open(talkURLs[randomIndex], "_blank");
+    });
+  </script>
+</body>
+</html>
